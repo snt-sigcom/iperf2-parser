@@ -1,0 +1,168 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{forestgreen4416044}{RGB}{44,160,44}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+title={Box plot},
+width=\textwidth,
+x grid style={darkgray176},
+xmin=0.875, xmax=9.125,
+xtick style={color=black},
+xtick={2,4,6,8},
+xticklabels={Bandwidth,Jitter,Latency,Packet Error Rate},
+y grid style={darkgray176},
+ymin=-0.525, ymax=11.025,
+ytick style={color=black}
+]
+\path [draw=white, fill=steelblue31119180, very thin]
+(axis cs:1.25,10.5)
+--(axis cs:2.75,10.5)
+--(axis cs:2.75,10.5)
+--(axis cs:1.25,10.5)
+--(axis cs:1.25,10.5)
+--cycle;
+\addplot [semithick, steelblue31119180]
+table {%
+2 10.5
+2 10.5
+};
+\addplot [semithick, steelblue31119180]
+table {%
+2 10.5
+2 10.5
+};
+\addplot [semithick, steelblue31119180]
+table {%
+1.625 10.5
+2.375 10.5
+};
+\addplot [semithick, steelblue31119180]
+table {%
+1.625 10.5
+2.375 10.5
+};
+\path [draw=white, fill=steelblue31119180, very thin]
+(axis cs:3.25,0.013)
+--(axis cs:4.75,0.013)
+--(axis cs:4.75,0.01775)
+--(axis cs:3.25,0.01775)
+--(axis cs:3.25,0.013)
+--cycle;
+\addplot [semithick, steelblue31119180]
+table {%
+4 0.013
+4 0.008
+};
+\addplot [semithick, steelblue31119180]
+table {%
+4 0.01775
+4 0.019
+};
+\addplot [semithick, steelblue31119180]
+table {%
+3.625 0.008
+4.375 0.008
+};
+\addplot [semithick, steelblue31119180]
+table {%
+3.625 0.019
+4.375 0.019
+};
+\path [draw=white, fill=steelblue31119180, very thin]
+(axis cs:5.25,0.75625)
+--(axis cs:6.75,0.75625)
+--(axis cs:6.75,1.438)
+--(axis cs:5.25,1.438)
+--(axis cs:5.25,0.75625)
+--cycle;
+\addplot [semithick, steelblue31119180]
+table {%
+6 0.75625
+6 0.445
+};
+\addplot [semithick, steelblue31119180]
+table {%
+6 1.438
+6 1.77
+};
+\addplot [semithick, steelblue31119180]
+table {%
+5.625 0.445
+6.375 0.445
+};
+\addplot [semithick, steelblue31119180]
+table {%
+5.625 1.77
+6.375 1.77
+};
+\path [draw=white, fill=steelblue31119180, very thin]
+(axis cs:7.25,0)
+--(axis cs:8.75,0)
+--(axis cs:8.75,0)
+--(axis cs:7.25,0)
+--(axis cs:7.25,0)
+--cycle;
+\addplot [semithick, steelblue31119180]
+table {%
+8 0
+8 0
+};
+\addplot [semithick, steelblue31119180]
+table {%
+8 0
+8 0
+};
+\addplot [semithick, steelblue31119180]
+table {%
+7.625 0
+8.375 0
+};
+\addplot [semithick, steelblue31119180]
+table {%
+7.625 0
+8.375 0
+};
+\addplot [very thin, white]
+table {%
+1.25 10.5
+2.75 10.5
+};
+\addplot [forestgreen4416044, mark=triangle*, mark size=3, mark options={solid}, only marks]
+table {%
+2 10.5
+};
+\addplot [very thin, white]
+table {%
+3.25 0.014
+4.75 0.014
+};
+\addplot [forestgreen4416044, mark=triangle*, mark size=3, mark options={solid}, only marks]
+table {%
+4 0.0177
+};
+\addplot [very thin, white]
+table {%
+5.25 1.1005
+6.75 1.1005
+};
+\addplot [forestgreen4416044, mark=triangle*, mark size=3, mark options={solid}, only marks]
+table {%
+6 1.1016
+};
+\addplot [very thin, white]
+table {%
+7.25 0
+8.75 0
+};
+\addplot [forestgreen4416044, mark=triangle*, mark size=3, mark options={solid}, only marks]
+table {%
+8 0.011
+};
+\end{axis}
+
+\end{tikzpicture}
